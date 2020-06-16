@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.box {
+    border: solid 2px black;
+}
+
+.question-and-score li {
+    display: inline-block;
+}
+
+img {
+    width: 500px;
+    height: auto;
+}

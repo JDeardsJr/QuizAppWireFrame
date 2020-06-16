@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Musical Theatre Quiz App</title>
+    <meta name="description" content="A quiz to test your knowled of Musical Theatre"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!--Main Starting Page-->
+        <section role="main start page" id="start-page">
+            <h1 id="quiz-title">Musical Theatre Quiz</h1> 
+            <div id="intro-page" class="box">
+                <div id="intro-text">
+                    <p>Are you a <strong>MUSICAL THEATRE</strong> Wiz???</p>
+                    <p>Let's find out!</p>
+                </div>
+                <div id="start-button">
+                    <button id="js-start-button">Start Quiz</button>
+                </div>
+            </div>
+        </section>
+   
+    <!--Rendering MT Question Sets Prototype-->
+        <section id="results" role="js rendered question set">
+            <h1>Question Sets</h1>
+            <div class="question-and-score">
+                <ul>
+                    <li id="js-answered">Question: 1/5</li>
+                    <li id="js-score">Score: 0/5</li>
+                </ul>
+            </div>
+            <form name="quizForm" onsubmit="return submitAnswers()">
+                <div class="box">
+                    <h3>What is my favorite musical?</h3>
+                    <input type="radio" name="q1" value="a" id="q1a" />This<br />
+                    <input type="radio" name="q1" value="b" id="q1b" />That<br />
+                    <input type="radio" name="q1" value="c" id="q1c" />The other<br />
+                    <input type="radio" name="q1" value="d" id="q1d" />All of the above<br />
+                    <button type="submit" class="submitButton button">Submit</button >
+                </div>
+            </form>
+        </section>
+
+    <!-- Wrong Answer Screen -->
+        <section id="feedback-page" role="main">
+            <h1>Wrong Answer Screen</h1>
+            <div class="box">
+                <h2>Sorry, wrong answer!</h2>
+                <img src="https://www.adn.com/resizer/mvKqr9foezxAvicIw3PQzvdS-5s=/1200x0/arc-anglerfish-arc2-prod-adn.s3.amazonaws.com/public/AF6DPOZJVRCCJLYYAG5M7PNPJI.jpg" alt="Ursula from 'The Little Mermaid'">
+                <h2>The correct answer was "The other"</h2>
+                <button id="js-next-button">Next</button>
+            </div>
+        </section>
+    
+    <!-- Correct Answer Screen -->
+        <section id="feedback-page" role="main">
+            <h1>Right Answer Screen</h1>
+            <div class="box">
+                <h2 >Correct!</h2>
+                <img src="https://bsp-static.playbill.com/dims4/default/dc27536/2147483647/crop/993x559%2B0%2B161/resize/970x546/quality/90/?url=http%3A%2F%2Fpb-asset-replication.s3.amazonaws.com%2F43%2Fc7%2F8f446f2c4b03ac21ad6307b7def1%2Fmanoflamancha-stokes-hr.jpg" alt="Brian Stokes Mitchell as Don Quixote">
+                <h2>Someone's been rehearsing...</h2>
+                <button id="js-next-button">Next</button>
+            </div>
+        </section>
+
+  <!-- Final Score Section -->
+        <section id="final-page">
+            <h1>Final Score Results</h1>
+            <div class="box">
+                <h2>All finished!</h2>
+                <img src="https://lh3.googleusercontent.com/G8JFcKkj_RlCblWDBf8wFE5l_ocmWssRxfO4Cgs1S4-hFxtDYuFnBnKKb9gFxVJG7afcl4i0j_g80vZSDHfdGFkTJzJh-mf2sLETAttXox0eBrzyKyHH2AeAzgIwwcOG22IVe79B=w2400" alt="Scene from the musical, 'Matilda'">
+                <h2>Final Score: 5 out of 5</h2>
+                <button id="js-restart-button">Try Again?</button>
+            </div>
+        </section>
+              
+
+        <main>
+
+        </main>
+    
+</body>
+</html>
